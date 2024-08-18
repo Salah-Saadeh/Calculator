@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border-radius: 5px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(52, 52, 92);
+            
+        }
+       .container{
+        width: 300px;
+        gap: 10px;
+        background-color: aliceblue;
+        padding: 10px;
+        flex-shrink: 0;
+        
+       }
+       .result{
+        background-color: rgb(4, 4, 65);
+        color: white;
+        text-align: end;
+        line-height: 50px;
+        height: 50px;
+        font-size: 30px;
+        margin-bottom: 10px;
+        padding: 20px 10px;
+        
+       }
+       .numbers{
+        display: flex;
+        background-color: rgb(4, 4, 65);
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 0px;
+
+       
+       }
+       button{
+        width: 60px;
+        height: 40px;
+        background-color: rgb(245, 245, 234);
+        color: rgb(15, 20, 92);
+        font-weight: bold;
+        border-radius: 8px;
+        border: none;
+        margin: 1px;
+        
+       }
+       .func{
+        display: flex;
+        width: inherit;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding: 0px 10px;
+        
+       }
+       .func button{
+        flex: 1;
+       }
+       .f1{
+        background-color: brown;
+        color: white;
+       }
+       .f2{
+        background-color: darkcyan;
+        color: white;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            399,981
+        </div>
+        <div class="numbers">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button style="background-color: black; color: white;">DEL</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+            <button>.</button>
+            <button>0</button>
+            <button>/</button>
+            <button>x</button>
+            <div class="func">
+                <button class="f1">RESET</button>
+                <button class="f2">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
